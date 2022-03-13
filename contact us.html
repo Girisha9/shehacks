@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;background-color: rgb(235, 205, 223);}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.h2{
+    margin-top:22px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f8f1f1;
+  padding: 2px;
+  text-align:center;
+}
+:root{
+  --navbar-height:59px;
+}
+#logo{
+  margin:34px 45px;
+}
+#logo img{
+  height:38px;
+  margin:-9px 45px;
+}
+#navbar{
+  display:flex;
+  align-items:center;
+}
+#navbar{
+  position:relative;
+  margin:auto;
+}
+#navbar ul{
+  display:flex;
+  margin-left:90px;
+}
+#navbar::before{
+  content:"";
+  background-color: black;
+  position:absolute;
+  height:48%;
+  width:100%;
+  margin-top:-10px;
+  z-index: -1;
+  opacity:0.4;
+}
+#navbar ul li{
+  list-style:none;
+  font-size:1rem;
+}
+#navbar ul li a{
+  color:white;
+display:block;
+padding:3px 22px;
+border-radius:20px;
+text-decoration: none;
+}
+#navbar ul li a:hover, #navbar ul li a.active{
+color:black;
+background-color:white;
+}
+</style>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+        <img src="logo1.png" alt="My Logo">
+    </div>
+    <ul>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="services.html">Developers</a></li>
+        <li class="item"><a href="advertise.html">Advertise</a></li>
+        <li class="item"><a href="job portal.html">Job Portal</a></li>
+        <li class="item"><a href="contact us.html">Contact Us</a></li>
+        <!-- <li class="item"><a></a></li> -->
+    </ul>
+</nav>
+
+
+    <h2 class="h2">Contact Us</h2>
+    <h3>Any comments or feedback?Let the <i>iDesign website</i> know! Thank you.</h3>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="lname"></label>
+    <input type="text" id="uname" name="username" placeholder="Name">
+
+    <!-- <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."> -->
+
+    <!-- <label for="lname"></label>
+    <input type="text" id="mail" name="mailid" placeholder="Your Email..."> -->
+
+    <!-- <label for="lname"></label>
+    <input type="text" id="uname" name="username" placeholder="Your Username.."> -->
+    <label for="lname"></label>
+    <input type="text" id="pname" name="passname" placeholder="Email">
+    <!-- <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select> -->
+
+    <label for="subject"></label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
